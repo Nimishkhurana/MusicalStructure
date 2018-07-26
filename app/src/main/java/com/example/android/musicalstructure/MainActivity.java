@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         ArrayList<Song> songs = new ArrayList<Song>();
 
         songs.add(new Song("Gal in kadni","Parmish Verma"));
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,now_playing.class);
+                Intent intent = new Intent(MainActivity.this,NowPlaying.class);
                 startActivity(intent);
             }
         });

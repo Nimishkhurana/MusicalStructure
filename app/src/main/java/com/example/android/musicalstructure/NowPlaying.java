@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-public class now_playing extends AppCompatActivity {
+public class NowPlaying extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class now_playing extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent intent = new Intent(now_playing.this, MainActivity.class);
+                Intent intent = new Intent(NowPlaying.this, MainActivity.class);
 
                 // Start the new activity
                 startActivity(intent);
